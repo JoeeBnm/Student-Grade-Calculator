@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator - Statistics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Grade Calculator</h1>
+            <nav>
+                <a href="index.html">Dashboard</a>
+                <a href="add-grades.html">Add Grades</a>
+                <a href="statistics.html" class="active">Statistics</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="statistics">
+                <div class="overview">
+                    <h2>Grade Overview</h2>
+                    <div class="stat-grid">
+                        <div class="stat-card">
+                            <h3>Overall Average</h3>
+                            <p id="overall-average">0.00</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Highest Grade</h3>
+                            <p id="highest-grade">-</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Lowest Grade</h3>
+                            <p id="lowest-grade">-</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Total Subjects</h3>
+                            <p id="total-subjects-stat">0</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subject-breakdown">
+                    <h2>Subject Breakdown</h2>
+                    <table id="subject-table">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Grade</th>
+                                <th>Coefficient</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="subject-body">
+                            <!-- Subject details will be loaded here -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="performance-chart">
+                    <h2>Performance Trend</h2>
+                    <div id="chart-container">
+                        <!-- Chart will be rendered here -->
+                        <p class="no-data">Add more grades to see performance trend</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

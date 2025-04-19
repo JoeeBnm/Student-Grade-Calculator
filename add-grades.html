@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator - Add Grades</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Grade Calculator</h1>
+            <nav>
+                <a href="index.html">Dashboard</a>
+                <a href="add-grades.html" class="active">Add Grades</a>
+                <a href="statistics.html">Statistics</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="calculator">
+                <div class="input-section">
+                    <h2>Add New Grade</h2>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" placeholder="Enter subject name">
+                    </div>
+                    <div class="form-group">
+                        <label for="grade">Grade:</label>
+                        <input type="number" id="grade" min="0" max="20" placeholder="Enter grade (0-20)">
+                    </div>
+                    <div class="form-group">
+                        <label for="coefficient">Coefficient:</label>
+                        <input type="number" id="coefficient" min="1" max="10" placeholder="Enter coefficient">
+                    </div>
+                    <button id="add-grade">Add Grade</button>
+                </div>
+
+                <div class="grades-list">
+                    <h2>Your Grades</h2>
+                    <table id="grades-table">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Grade</th>
+                                <th>Coefficient</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="grades-body">
+                            <!-- Grades will be added here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
